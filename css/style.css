@@ -178,13 +178,13 @@ span{
 }
 
 .Skills{
-position: relative;
-min-height: 100vh;
-width: 100%;
-display: flex;
-justify-content: center;
-align-items: center;
-flex-wrap: wrap;
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .head{
@@ -194,17 +194,23 @@ flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-bottom: 90px;
 }
 
 .head h2{
     position: relative;
     font-size: 4.5rem;
 }
-
+.skills-box{
+    display: flex;
+    flex-wrap:wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
 .skills-content{
     position: relative;
     width: 300px;
-    padding: 20px;
     margin: 20px;
     display: flex;
     justify-content: center;
@@ -212,15 +218,21 @@ flex-wrap: wrap;
     flex-wrap: wrap;
     flex-direction: column;
     text-align: center;
+    margin-bottom: 90px;
 }
 
-.skills-content img{
+.skills-img img{
     position: relative;
     width: 50px;
     height: 50px;
     padding: 1px;
     background: var(--text-color);
     border-radius: 50%;
+    transition: .1s;
+}
+
+ .skills-img:hover .icon{
+    transform: translateY(-10px);
 }
 
 .skills-content h2{
